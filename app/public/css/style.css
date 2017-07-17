@@ -1,0 +1,43 @@
+.laptop {
+    width: 400px;
+    margin-left: 37%;
+    margin-top: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    border-right: .1em solid;
+    width: 9em;
+    /* fallback */
+    width: 15ch;
+    /* # of chars */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(15, end), /* # of steps = # of chars */
+    blink-caret .5s step-end infinite alternate;
+    margin-left: 33%;
+}
+
+p{
+	font-family: 'Contrail One', cursive;
+	text-align: center;
+	font-size: 25px;
+}
+
+button{
+	margin-left:46%;
+	font-family: 'Contrail One', cursive;
+	font-size: 25px;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "compatability based dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leenbean16/codersOnly.git"
+  },
+  "author": "Lina Shamoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leenbean16/codersOnly/issues"
+  },
+  "homepage": "https://github.com/leenbean16/codersOnly#readme",
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}
