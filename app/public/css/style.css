@@ -30,14 +30,35 @@ h1 {
     margin-left: 33%;
 }
 
-p{
-	font-family: 'Contrail One', cursive;
-	text-align: center;
-	font-size: 25px;
+p {
+    font-family: 'Contrail One', cursive;
+    text-align: center;
+    font-size: 25px;
 }
 
-button{
-	margin-left:46%;
-	font-family: 'Contrail One', cursive;
-	font-size: 25px;
+button {
+    margin-left: 45%;
+    font-family: 'Contrail One', cursive;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: #e3e3e3
+}
+
+button:active {
+    background-color: #f1f1f1;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
