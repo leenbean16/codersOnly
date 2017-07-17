@@ -1,5 +1,5 @@
 # codersOnly - Dating App - Node and Express Servers
 
-### a compatibility-based "FriendFinder" application -- 
+### a compatibility-based "FriendFinder" application 
 
-basically a dating app. This full-stack site will take in results your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
+basically a dating app. This full-stack site will take in results users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
