@@ -1,4 +1,4 @@
-var friends = [
+let friends = [
   {
       "name":"Lina",
       "photo":"pic",
@@ -161,5 +161,14 @@ var friends = [
 }
 ]
 
+function addFriend(friendInfo){
+  friends.push(friendInfo)
+}
+
+
+
 // Note how we export the array. This makes it accessible to other files using require.
-module.exports = friends;
+module.exports = {
+  friends,
+  addFriend
+}
