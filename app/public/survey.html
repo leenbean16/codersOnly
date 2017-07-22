@@ -1,181 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>codersOnly Survey Page</title>
-    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
-    <link rel="stylesheet" href="animate.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">    
+    <title>codersOnly - survey</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
-
-<body>
-    <div class="container">
-        <div>
-            <h2>Survey Questions</h2>
-            <h3><strong>What's your name?</strong></h3>
-            <h4>Name (Required)</h4>
-            <input type="text" name="" id="name" class="form-control" required>
-            <h4>Link to Photo Image (Required)</h4>
-            <input type="text" name="" id="photo" class="form-control" required>
-            <hr>
-            <h3><strong>1.</strong></h3>
-            <h4>You are always looking for an adventure.</h4>
-            <select data-placeholder="" class="chosen-select" id="q1">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 2</strong></h3>
-            <h4>Generally speaking, you rely more on your instinct than your imagination.</h4>
-            <select data-placeholder="" class="chosen-select" id="q2">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 3</strong></h3>
-            <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-            <select data-placeholder="" class="chosen-select" id="q3">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 4</strong></h3>
-            <h4>You are generally an outdoors person.</h4>
-            <select data-placeholder="" class="chosen-select" id="q4">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 5</strong></h3>
-            <h4>Generally you accept people are people and rarely upset you.</h4>
-            <select data-placeholder="" class="chosen-select" id="q5">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 6</strong></h3>
-            <h4>You don't care to relate to other people’s feelings.</h4>
-            <select data-placeholder="" class="chosen-select" id="q6">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 7</strong></h3>
-            <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-            <select data-placeholder="" class="chosen-select" id="q7">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 8</strong></h3>
-            <h4>You live more in dreams than reality.</h4>
-            <select data-placeholder="" class="chosen-select" id="q8">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 9</strong></h3>
-            <h4>You care about the well being of others and whole heartedly listen when someone is upset.</h4>
-            <select data-placeholder="" class="chosen-select" id="q9">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <h3><strong>Question 10</strong></h3>
-            <h4>You would rather stay home watching TV then go out and socialize with others.</h4>
-            <select data-placeholder="" class="chosen-select" id="q10">
-                <option value=""></option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-            <br>
-            <br>
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
-            </button>
-            <hr>
+<body class="container">
+    <span class="title">codersOnly</span>
+    </div>
+    <div id="text">
+        <p>Don't code alone => (pair-program!);</p>
+    </div>
+    <div id="text">
+    <p>Couples who code together === stay together!</p>
+    </div>
+    </body>
+        <div id="name" class="info">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="subName" required>
         </div>
-        <!-- Modal -->
-        <div id="resultsModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h2 class="modal-title"><strong>Best Match</strong></h2>
-                    </div>
-                    <div class="modal-body">
-                        <h2 id="matchName"></h2>
-                        <img id="matchImg" src="file:///Users/lisavanorden/Documents/RCB_files/week13_files/wk13_hw/friendfinder/assets/images/floya_avatar_pic.jpg" alt="">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+
+        <div id="pic" class="info">
+            <label for="picture">Picture URL:</label>
+            <input type="text" name="picture" id="subPic">
+        </div>
+        <div id="survey">
+            <div class="qContainer">
+                <div class="question">Q1: Do you love github?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option1" value="1"></li>
+                        <li><input type="radio" name="option1" value="2"></li>
+                        <li><input type="radio" name="option1" value="3"></li>
+                        <li><input type="radio" name="option1" value="4"></li>
+                        <li><input type="radio" name="option1" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q2: I _____ to code.</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option2" value="1"></li>
+                        <li><input type="radio" name="option2" value="2"></li>
+                        <li><input type="radio" name="option2" value="3"></li>
+                        <li><input type="radio" name="option2" value="4"></li>
+                        <li><input type="radio" name="option2" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q3: How do you feel about Front-End?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option3" value="1"></li>
+                        <li><input type="radio" name="option3" value="2"></li>
+                        <li><input type="radio" name="option3" value="3"></li>
+                        <li><input type="radio" name="option3" value="4"></li>
+                        <li><input type="radio" name="option3" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q4: How do you feel about Back-End?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option4" value="1"></li>
+                        <li><input type="radio" name="option4" value="2"></li>
+                        <li><input type="radio" name="option4" value="3"></li>
+                        <li><input type="radio" name="option4" value="4"></li>
+                        <li><input type="radio" name="option4" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q5: How much of a night owl are you?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Coders don't sleep</li>
+                        <li><input type="radio" name="option5" value="1"></li>
+                        <li><input type="radio" name="option5" value="2"></li>
+                        <li><input type="radio" name="option5" value="3"></li>
+                        <li><input type="radio" name="option5" value="4"></li>
+                        <li><input type="radio" name="option5" value="5"></li>
+                        <li>Pro napper</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q6: [vanilla javaScript, node, express, mySQL, React]</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Pick according to index pos. of [i].</li>
+                        <li><input type="radio" name="option6" value="1">0</li>
+                        <li><input type="radio" name="option6" value="2">1</li>
+                        <li><input type="radio" name="option6" value="3">2</li>
+                        <li><input type="radio" name="option6" value="4">3</li>
+                        <li><input type="radio" name="option6" value="5">4</li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q7: How much do you like the show 'Silicon Valley'?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option7" value="1"></li>
+                        <li><input type="radio" name="option7" value="2"></li>
+                        <li><input type="radio" name="option7" value="3"></li>
+                        <li><input type="radio" name="option7" value="4"></li>
+                        <li><input type="radio" name="option7" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q8: How independent are you?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Very</li>
+                        <li><input type="radio" name="option8" value="1"></li>
+                        <li><input type="radio" name="option8" value="2"></li>
+                        <li><input type="radio" name="option8" value="3"></li>
+                        <li><input type="radio" name="option8" value="4"></li>
+                        <li><input type="radio" name="option8" value="5"></li>
+                        <li>Not much</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q9: Is sharing, caring?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>YES!</li>
+                        <li><input type="radio" name="option9" value="1"></li>
+                        <li><input type="radio" name="option9" value="2"></li>
+                        <li><input type="radio" name="option9" value="3"></li>
+                        <li><input type="radio" name="option9" value="4"></li>
+                        <li><input type="radio" name="option9" value="5"></li>
+                        <li>Nah</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qContainer">
+                <div class="question">Q10: Do you like coffee?</div>
+                <div class="answer">
+                    <ul class="answerArea">
+                        <li>Love</li>
+                        <li><input type="radio" name="option10" value="1"></li>
+                        <li><input type="radio" name="option10" value="2"></li>
+                        <li><input type="radio" name="option10" value="3"></li>
+                        <li><input type="radio" name="option10" value="4"></li>
+                        <li><input type="radio" name="option10" value="5"></li>
+                        <li>Hate</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- JS Files -->
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script>
-        $("#submit").on("click", function(event) {
-            event.preventDefault();
-            var clearForm = function() {
-                $("#name").val('');
-                $("#photo").val('');
-                for (var i = 0; i < 10; i++) {
-                    $('#q' + i).val('');
-                }
-            }
+        <div id="subBut">
+            Submission
+        </div>
+    <ul>
+        <li>
+            <a href="/friends">Other Coders</a>|<a href="https://github.com/leenbean16/codersOnly">Github Repo</a>
+        </li>
+    </ul>
+    <div id="footer">&#169; Copyright 2017 Lina Shamoon</div>
+    </div>
+    <div id="open-modal" class="modal">
+        <div> <a href="/" title="Close" class="close">&#x2715;</a>
+            <h2 id="modal-heading">You'd make a cute couple ;)</h2>
+            <div id="matchInfo">            
+                <img src="" id="possibleFutureLifeMate" alt="Picture">
+                <div id="possibleFutureLifeMateName"></div></div>
+            </div>
+    </div>
+    <!-- jQuery and JavaScript links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-            var userData = {
-                name: $("#name").val().trim(),
-                photo: $("#photo").val().trim(),
-                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+    <script type="text/javascript">
+        $('#subBut').off().click(function(){
+            let name  = $('#subName').val().trim()||"No Name"
+            let picURL = $('#subPic').val().trim()||"No picture provided"
+            let questionAmount = $('.question').length
+            let newFriendData = [];
+            let newPersonObject ={};
+            for (let i = 1; i <= questionAmount; i++){
+                let ans = $(`input[name=option${i}]:checked`).val() || 0;
+                
+                newFriendData.push(parseInt(ans));
             }
-
-            $.post(window.location.origin + "/api/friends", userData, function(data) {
-                // $("#matchName").text(data.name);
-                // $('#matchImg').attr("src", data.photo).attr("alt", data.name);
-                console.log(data);
-                // toggleModal();
+            newPersonObject = { 
+                name: name, 
+                photo: picURL, 
+                scores: newFriendData 
+            }
+            $.post('/newFriend', newPersonObject, function(data){
+                $('#possibleFutureLifeMate').attr("src", data.photo);
+                $('#possibleFutureLifeMateName').text(data.name);
+                $('.modal').css({'opacity':1, 'pointer-events':"auto"});
+                $('.close').off().click(function(){
+                    $('.modal').css({'opacity':0, 'pointer-events':"none"});
+                })
             });
-
-            // clearForm();
-        });
-        </script>
+            
+        })
+    </script>
 </body>
 
 </html>

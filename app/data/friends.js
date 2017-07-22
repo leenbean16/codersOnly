@@ -1,174 +1,35 @@
-let friends = [
-  {
-      "name":"Lina",
-      "photo":"pic",
-      "scores":[
-         5,
-         1,
-         4,
-         4,
-         5,
-         1,
-         2,
-         5,
-         4,
-         1
-          ]
-      },
-  {
-  "name":"Margaret",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     4,
-     5,
-     1,
-     2,
-     5,
-     4,
-     1
-      ]
-},
-{
-  "name":"Alex",
-  "photo":"pic",
-  "scores":[
-     9,
-     1,
-     4,
-     4,
-     5,
-     1,
-     2,
-     5,
-     4,
-     1
-      ]
-},
-{
-  "name":"Fahad",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Tray",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Aaron",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Joe",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Derek",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Arnav",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-},
-{
-  "name":"Ryan",
-  "photo":"pic",
-  "scores":[
-     5,
-     1,
-     4,
-     3,
-     2,
-     6,
-     9,
-     8,
-     9,
-     9
-      ]
-}
-]
+let analyzeFriendList = function(array) {
+    let match = {};
+    let friendsList = array;
+    let arrayLength = friendsList.length
+    let currLowScore = 100;
 
-function addFriend(friendInfo){
-  friends.push(friendInfo)
+    for (let i = 0; i < arrayLength - 1; i++) {
+        let totalDifference = _arrayDifference(friendsList[i].scores, friendsList[arrayLength - 1].scores);
+        if (totalDifference < currLowScore) {
+            currLowScore = totalDifference;
+            match = {
+                name: friendsList[i].name,
+                photo: friendsList[i].photo
+            }
+        }
+    }
+    return (match);
 }
 
+let _arrayDifference = function(array1, array2) {
+    let resultArray = [];
+    let totalDifference = 0;
 
+    for (let i = 0; i < 5; i++) {
+        resultArray.push(Math.abs(array1[i] - array2[i]))
+    }
 
-// Note how we export the array. This makes it accessible to other files using require.
-module.exports = {
-  friends,
-  addFriend
+    totalDifference = resultArray.reduce(function(a, b) {
+        return a + b
+    });
+
+    return totalDifference;
 }
+
+module.exports = analyzeFriendList;
